@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stkpredictor</title>
+        <link rel="stylesheet" href="./css/home2.css">
+    </head>
+    <body>
+        <div id="top">
+            <div class="a">
+            <a id="symbol" href="/"><img width="200px" height="200px" src="./images/logo.jfif"></a>
+            </div>
+            <div class="a" id="head">
+            <a class="head1" href="/">Home</a>
+            <a class="head1" href="/tutorials">Tutorials</a>
+            <a class="head1" href="">History</a>
+            <a id="profileLink" href="">welcome: Name</a>
+            </div>
+        </div>
+        <div id="pasteinfo">Paste Company Symbol in the search bar and how many days future price of the company you want:</div>
+        <form action="/outcome" method="post" id="finder">
+            <input type="text" name="finder" placeholder="type or paste Symbol from yahoo finance" required autocomplete="off"><br><br>
+            <input type="number" name="days" placeholder="type no of days" required autocomplete="off"><br><br>
+            <input type="submit" name="predict" value="predict">
+        </form>
+        <hr>
+        <div class="getStarted">GET STARTED</div>
+        <div class="grid-container2">
+            <div class="grid-item2">
+                <div class="tu_stepimg" id="tu_stepimg2"><img width="150px" src="./images/tu_step2.jpg"></div>
+                <div class="tu_stepinfo">go to <a href="https://in.finance.yahoo.com/" target="_blank">yahoo finance</a> and search for company you are interested in investing</div>
+            </div>
+            <div class="grid-item2">
+                <div class="tu_stepimg" id="tu_stepimg3"><img width="200px" src="./images/tu_step3.jpg"></div>
+                <div class="tu_stepinfo">copy symbol of that company as example shown above of BSE Sensex</div>
+            </div>
+            <div class="grid-item2">
+                <div class="tu_stepimg" id="tu_stepimg4"><img width="150px" src="./images/tu_step4.jpg"></div>
+                <div class="tu_stepinfo">paste the symbol in the search bar of stkpredictor</div>
+            </div>
+            <div class="grid-item2">
+                <div class="tu_stepimg"><img width="300px" src="./images/tu_step5.jpg"></div>
+                <div class="tu_stepinfo">click on predict button and your future is waiting for you</div>
+            </div>
+            <form action="/logout" method="POST">
+                <button id="logout">Logout</button>
+            </form>
+            <script src="./javascript/home2.js"></script>
+    </body>
+</html>

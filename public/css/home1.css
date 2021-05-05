@@ -1,0 +1,128 @@
+body{
+    background-color: white;
+    color: black;
+}
+.a{
+    display: inline-block;
+}
+#top{
+    background-color: rgb(0, 0, 0);
+    min-width: 800px;
+}
+
+#symbol{
+    height: 4px;
+    width: 4px;
+}
+#head{
+    margin-left: 200px;
+}
+.head1{
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#signButton{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+#signButton:hover{
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 600px;
+    margin-top: 5px;
+}
+.grid-item{
+    text-align: center;
+}
+#vector{
+    height: 200px;
+}
+#quote{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+#top-heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(54, 80, 129);
+}
+#information{
+    text-align: center;
+    font-size: larger;
+}
+#signupButton{
+    position: relative;
+    text-decoration: none;
+    background-color: rgb(103, 46, 143);
+    border-radius: 3px;
+    font-size: x-large;
+    color: white;
+    padding: 3px 5px 3px 5px;
+    top: 5px;
+}
+#ourGoal{
+    text-align: center;
+}
+.subHeading{
+    position: relative;
+    font-size: 40px;
+    color: rgb(54, 80, 129);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+#information2{
+    margin:auto;
+    font-size: larger;
+    width: 600px;
+    text-align: center;
+}
+.getStarted{
+    position: relative;
+    font-size: 40px;
+    color: rgb(54, 80, 129);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 100px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.tu_stepimg{
+    margin: auto;
+    text-align: center;
+}
+
+#tu_stepimg2{
+    margin-top: 40px;
+}
+#tu_stepimg3{
+    margin-top: 40px;
+}
+
+#tu_stepimg4{
+    margin-top: 40px;
+}
+
+
+.tu_stepinfo{
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    margin-top: 5px;
+}

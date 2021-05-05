@@ -1,0 +1,86 @@
+body{
+    background-color: white;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: auto;
+}
+#main-grid-1{
+    height:100px ;
+}
+#backButton{
+    position: absolute;
+    left: 20px;
+}
+#backButton>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+#backButton>a>span{
+    position: relative;
+    font-size: large;
+    top: 2px;
+}
+#signin-button{
+    position: absolute;
+    right: 20px;
+}
+#signin-button>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+#backButton>a>span:hover{
+    animation-name: backarrow;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes backarrow{
+    0%{font-size: large;}
+    100%{font-size: larger;}
+}
+
+#main-grid-2{
+    min-height: 400px;
+}
+.signup-container{
+    text-align: center;
+}
+input[type=text],input[type=password],input[type=email]{
+    width: 200px;
+    padding: 8px 5px;
+    font-size: large;
+    margin: 5px 0px 0px 0px;
+    border: 1px solid black;
+    transition: 0.2s;
+}
+textarea:focus,input[type=text]:focus,input[type=password]:focus,input[type=email]:focus{
+    outline: none;
+    border-width: 2px;
+    border-color:blueviolet;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#buttonSubmit{
+    background-color: rgb(170, 233, 170);
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#or{
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+    font-size: large;
+    margin: 0px 2px 0px 2px;
+}
+
+#nain-grid-3{
+    height: 100px;
+}

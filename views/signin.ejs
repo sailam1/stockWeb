@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ml-interface</title>
+        <link rel="stylesheet" href="/css/signin.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div id="main-grid-1">
+                <div id="backButton">
+                    <a href="/"><span>&#8592;</span>back</a>
+                </div>
+                <div id="signin-button">
+                    <a href="signup?">SignUP>></a>
+                </div>
+            </div>
+            <div id="main-grid-2">
+                <div class="signup-container">
+                    <h1>Signin</h1>
+                    <div><%=message%></div>
+                    <form action="/signin" method="POST">
+                        <input type="text" name="uname" autocomplete="off" placeholder="username/E-mail" required><br>
+                        <input type="password" name="password" placeholder="password" required><br>
+                        <button id="buttonSubmit">Login</button>
+                    </form><br>
+                    <hr width="200px" style="display: inline-block;"><p id="or">or</p><hr width="200px" style="display: inline-block;">
+                    <br>
+                    <div>facebook</div>
+                    <div>twitter</div>
+                    <div>google</div>
+                </div>
+            </div>
+            <div id="main-grid-3">
+
+            </div>
+        </div>
+    </body>
+</html>

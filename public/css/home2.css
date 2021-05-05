@@ -1,0 +1,113 @@
+body{
+    background-color: white;
+    color: black;
+}
+.a{
+    display: inline-block;
+}
+#top{
+    background-color: rgb(0, 0, 0);
+    min-width: 800px;
+}
+
+#symbol{
+    height: 4px;
+    width: 4px;
+}
+#head{
+    margin-left: 200px;
+}
+.head1{
+    color: white;
+    font-size: x-large;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#profileLink{
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 2px 2px 2px 2px;
+    margin-left: 200px;
+    transition: 0.2s;
+}
+#profileLink:hover{
+    background-color:black;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    border-radius: 3px;
+}
+#pasteinfo{
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#finder{
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+input[type="text"],input[type="number"]{
+    font-size: x-large;
+    padding: 3px 20px 3px 20px;
+}
+input[type="submit"]{
+    background-color: black;
+    font-size: x-large;
+    color: white;
+    border: none;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.getStarted{
+    position: relative;
+    font-size: 40px;
+    color: rgb(54, 80, 129);
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 100px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns:  auto auto auto auto;
+}
+
+.tu_stepimg{
+    margin: auto;
+    text-align: center;
+}
+
+#tu_stepimg2{
+    margin-top: 40px;
+}
+#tu_stepimg3{
+    margin-top: 40px;
+}
+
+#tu_stepimg4{
+    margin-top: 40px;
+}
+
+
+.tu_stepinfo{
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    margin-top: 5px;
+}
+
+#logout{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: white;
+    color: black;
+    font-size: larger;
+}
+
