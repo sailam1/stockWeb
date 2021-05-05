@@ -11,9 +11,9 @@ try:
     import pandas as pd
     from yahoo_fin.stock_info import get_data
     from sklearn.preprocessing import MinMaxScaler
-    from keras.models import Sequential
-    from keras.layers import Dense
-    from keras.layers import LSTM
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Dense
+    from tensorflow.keras.layers import LSTM
     import numpy as np
 except Exception as e:
     print(e)
