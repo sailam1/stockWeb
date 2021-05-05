@@ -72,6 +72,7 @@ app.post("/signup",function(req,res){
     data.save();
     req.session.loggedin=true;
     req.session.username=userName;
+    res.redirect("/signin");
 });
 
 //user checking and logging him in
