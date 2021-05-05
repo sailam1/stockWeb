@@ -77,8 +77,8 @@ train_data=datas.iloc[:,1:5].values
 def data_process(data,column):
     x_train=[]
     y_train=[]
-    for i in range(5,len(data)):
-        x_train.append(data[i-5:i,column])
+    for i in range(10,len(data)):
+        x_train.append(data[i-10:i,column])
         y_train.append(data[i,column])
         
     x_train,y_train=np.array(x_train),np.array(y_train)
@@ -127,7 +127,7 @@ except Exception as e7:
 #prediction future prices based on given input
 #days 10
 def predictor(days,model,datas,column,scaler):
-    trainer=datas.iloc[len(datas)-5:,column].values
+    trainer=datas.iloc[len(datas)-10:,column].values
     output=[]
     for i in range(days):
         trainer=np.reshape(trainer,(1,trainer.shape[0],1))

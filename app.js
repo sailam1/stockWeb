@@ -62,14 +62,6 @@ app.post("/signup",function(req,res){
     var email=req.body.email;
     var fname=req.body.fname;
     var lname=req.body.lname;
-    User.find({username:username},function(err,data){
-        if(err){
-            console.log(err);
-        }
-        else if(data.length!==0){
-            res.render("signup");
-        }
-    });
     const data=new User({
         username:userName,
         email:email,
