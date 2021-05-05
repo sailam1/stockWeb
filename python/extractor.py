@@ -30,7 +30,7 @@ if(bools):
         days=int(days)
         datas=get_data(a,start_date="01/01/2001",index_as_date=False)
     except Exception as e2:
-        print("no such company with Symbol "+a+" exists")
+        print("no such company with Symbol "+a+" exist")
         bools=False
 
 #converting dates into str date fromat
