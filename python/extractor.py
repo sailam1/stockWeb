@@ -145,13 +145,13 @@ try:
     low_prediction=predictor(days,model_low,datas,3,scaler3)
     close_prediction=predictor(days,model_close,datas,4,scaler4)
 except Exception as es:
-    print("unable to predict")
+    print(es)
 
 try:
     output_list=[dates,open_price,high_price,low_price,close_price,open_prediction,high_prediction,low_prediction,close_prediction]
 
 except Exception as e5:
-    print(e5)
+    print("asdffda")
 
 print(output_list)
 
