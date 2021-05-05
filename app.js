@@ -113,9 +113,9 @@ var out="";
 var num="";
 app.get("/",function(req,res){
     if(req.session.loggedin){
+        res.render("home2");
         out="";
         num="";
-        res.render("home2");
     }
     else{
         res.render("home1");
@@ -158,7 +158,7 @@ app.post("/logout",function(req,res){
 
 let port=process.env.PORT;
 
-if(port===null || port===""){
+if(port==null || port==""){
     port=3000;
 }
 
