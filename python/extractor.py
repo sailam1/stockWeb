@@ -16,7 +16,7 @@ try:
     from keras.layers import LSTM
     import numpy as np
 except Exception as e:
-    print("error in importing lib"+" extractor.py13")
+    print(e)
     bools=False
 
 

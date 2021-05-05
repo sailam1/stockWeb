@@ -8,4 +8,9 @@
 }
 #outputLink{
     visibility: hidden;
+    text-align: center;
+}
+#loadingSign{
+    text-align: center;
+    top: 100px;
 }
