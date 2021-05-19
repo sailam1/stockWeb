@@ -79,13 +79,6 @@ function realPrice(){
                     display:"true",
                     text:"last 30 open, high, low, close prices"
                 }
-            },
-            events:["mousemove"],
-            onClick:(e)=>{
-                const canvasPosition=Chart.helpers.getRelativePosition(e,openLineChart);
-
-                const dataX=openLineChart.scales.x.getValueForPixel(canvasPosition.x);
-                const dataY=openLineChart.scales.y.getValueForPixel(canvasPosition.y);
             }
         }
     });

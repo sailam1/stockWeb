@@ -11,7 +11,8 @@ app=express();
 app.use(session({
     secret: 'secret',
     resave: true,
-    saveUninitialized: true
+    saveUninitialized: true,
+    cookie:{maxAge:3600000}
 }));
 
 app.use(bodyparser.urlencoded({extended:true}));
@@ -39,7 +40,6 @@ const userScema=new mongoose.Schema({
 });
 
 const User=mongoose.model("User",userScema);
-
 
 
 
@@ -106,9 +106,9 @@ var out="";
 var num="";
 app.get("/",function(req,res){
     if(req.session.loggedin){
+        res.render("home2");
         out="";
         num="";
-        res.render("home2");
     }
     else{
         res.render("home1");

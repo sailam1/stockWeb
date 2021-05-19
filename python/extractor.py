@@ -77,8 +77,8 @@ train_data=datas.iloc[:,1:5].values
 def data_process(data,column):
     x_train=[]
     y_train=[]
-    for i in range(10,len(data)):
-        x_train.append(data[i-10:i,column])
+    for i in range(8,len(data)):
+        x_train.append(data[i-8:i,column])
         y_train.append(data[i,column])
         
     x_train,y_train=np.array(x_train),np.array(y_train)
@@ -127,12 +127,12 @@ except Exception as e7:
 #prediction future prices based on given input
 #days 10
 def predictor(days,model,datas,column,scaler):
-    trainer=datas.iloc[len(datas)-10:,column].values
+    trainer=datas.iloc[len(datas)-8:,column].values
     output=[]
     for i in range(days):
         trainer=np.reshape(trainer,(1,trainer.shape[0],1))
         prediction=model.predict(trainer)
-        output.append(scaler.inverse_transform(prediction))
+        output.append(scaler.inverse_transform(prediction)+0.004*scaler1.inverse_transform(np.array([trainer[trainer.shape[0]-1],]).reshape(-1,1))[0][0])
         trainer=np.delete(trainer,0)
         trainer=np.append(trainer,prediction)
     output=np.array(output)
@@ -149,11 +149,13 @@ except Exception as es:
 
 try:
     output_list=[dates,open_price,high_price,low_price,close_price,open_prediction,high_prediction,low_prediction,close_prediction]
+    print(output_list)
+
 
 except Exception as e5:
     print("asdffda")
 
-print(output_list)
+
 
 
 
